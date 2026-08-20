@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaDesk AI | Live Demo & Integration Preview</title>
+  <!-- Tailwind CSS for clean demo UI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col items-center justify-center p-6">
+
+  <!-- Demo Content Container -->
+  <div class="max-w-2xl w-full bg-slate-800 border border-slate-700 rounded-2xl p-8 shadow-2xl space-y-6 text-center">
+    
+    <!-- Header -->
+    <div class="space-y-2">
+      <span class="px-3 py-1 bg-blue-500/20 text-blue-400 text-xs font-semibold rounded-full uppercase tracking-wider">
+        Official Live Demo
+      </span>
+      <h1 class="text-3xl font-extrabold text-white tracking-tight">
+        NovaDesk AI Support Agent
+      </h1>
+      <p class="text-sm text-slate-400">
+        Zero-dependency, CSS-isolated embeddable customer support widget powered by Groq LLM streaming.
+      </p>
+    </div>
+
+    <!-- Quick Test Instructions -->
+    <div class="bg-slate-950/70 border border-slate-700/60 rounded-xl p-5 text-left space-y-3">
+      <h2 class="text-xs font-bold text-slate-300 uppercase tracking-wider">Try Asking the Widget:</h2>
+      <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
+        <li><span class="text-slate-200">"What is NovaDesk AI and what can you help with?"</span></li>
+        <li><span class="text-slate-200">"Explain how to embed this widget into an HTML website."</span></li>
+        <li><span class="text-slate-200">"Write a quick JavaScript example of a fetch call."</span></li>
+      </ul>
+    </div>
+
+    <!-- Quick Navigation Links -->
+    <div class="flex justify-center items-center gap-4 pt-2">
+      <a href="/admin.html" target="_blank" class="px-4 py-2 bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-semibold rounded-lg transition border border-slate-600">
+        Open Telemetry Dashboard ↗
+      </a>
+    </div>
+
+    <!-- Embed Code Notice -->
+    <p class="text-[11px] text-slate-500">
+      Click the 💬 floating button on the bottom-right corner to start real-time chat.
+    </p>
+
+  </div>
+
+  <!-- ================================================================= -->
+  <!-- NOVADESK AI OFFICIAL EMBED SCRIPT                                  -->
+  <!-- Customize 'data-bot-name', 'data-color', or 'data-client-id' here  -->
+  <!-- ================================================================= -->
+  <script 
+    src="http://localhost:5000/widget.js" 
+    data-bot-name="NovaDesk AI" 
+    data-color="#2563eb" 
+    data-client-id="default_client"
+    defer>
+  </script>
+
+</body>
+</html>

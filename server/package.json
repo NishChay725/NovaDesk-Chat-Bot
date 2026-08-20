@@ -1,0 +1,24 @@
+{
+  "name": "novadesk-server",
+  "version": "1.0.0",
+  "description": "backend apis",
+  "keywords": [
+    "ai"
+  ],
+  "license": "ISC",
+  "author": "nishchay",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start":"node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.6.2",
+    "groq-sdk": "^1.5.0",
+    "helmet": "^8.3.0",
+    "mongoose": "^9.9.3"
+  }
+}
